@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-04T08:30:38.601Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="qucPSgrnmLsQ4DjGaeFH" version="20.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-04T08:48:07.617Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="xj1RNZFvb0xNL5jShtyU" version="20.3.7" type="github">
   <diagram id="NuDOtJG8TD-ys9CqmtJ7" name="Страница 1">
     <mxGraphModel dx="868" dy="460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -176,13 +176,13 @@
         <mxCell id="jUb1sBOBOLr7_-jceM8G-53" value="Confirming tool (like 2FA, PIN codes)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="30" y="860" width="210" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="jUb1sBOBOLr7_-jceM8G-54" value="Применительно к какой задче этот функционал? При регистрации в боте указывается логин от Wearecommunity, на почту из профиля API получаем почтовый адрес пользователя и отправляем PIN, ожидаем в канале пользователя подтверждение?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="290" y="860" width="510" height="30" as="geometry" />
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-54" value="Применительно к какой задче этот функционал? При регистрации в боте указывается логин от Wearecommunity, на почту из профиля API получаем почтовый адрес пользователя и отправляем PIN, ожидаем в канале пользователя подтверждение? Какой почтовій сервис использовать для этих целей? Если рассылка SMS - какой сервис?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="860" width="510" height="40" as="geometry" />
         </mxCell>
         <mxCell id="jUb1sBOBOLr7_-jceM8G-55" value="Комманды боту:&lt;br&gt;1.&amp;nbsp;Check status of the course and participation. &lt;b&gt;\cstatus&lt;/b&gt;. Откуда берем? Wearecommunity API? Требуется ли дополнительные уточнения? Закрытые курсы/участие, только активные, все?&lt;br&gt;&lt;br&gt;2.&amp;nbsp;Request hometask/description. &lt;b&gt;\htask&lt;/b&gt;. Откуда берем? Autocode API? Требуется ли дополнительные уточнения? По какому курсу? Фильтр по статусу задачи (открытая, закрытая). Какой объем информации?&lt;br&gt;&lt;br&gt;3.&amp;nbsp;View links to previous events(lectures). &lt;b&gt;\elink&amp;nbsp;&lt;/b&gt;Откуда берем? Wearecommunity API? Фильтруем все события релевантные курсам на которые сейчас подписан пользователь?&lt;br&gt;&lt;br&gt;4.&amp;nbsp;Check certificate from certificates. &lt;b&gt;\cert&amp;nbsp;&lt;/b&gt;Что эта проверка означает? Проверить есть ли у пользовател сертификаты и выдать ему сотв линки?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="30" y="930" width="450" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="jUb1sBOBOLr7_-jceM8G-56" value="Какая СУБД? SQL(PostgreSQL, MySQL), NoSQL(MongoDB).&lt;br&gt;Данные: Инфо о пользователе, ид его чата, кэшируем данные? В каких группах Wearecommunity состоит, на какие курсы подписан, желает ли получать инфо о событиях, новостях, изменениях в статусе проверки домашек" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-56" value="Какая СУБД? SQL(PostgreSQL, MySQL), NoSQL(MongoDB). Какие библиотеки доступа.&lt;br&gt;Данные: Инфо о пользователе, ид его чата, кэшируем данные? В каких группах Wearecommunity состоит, на какие курсы подписан, желает ли получать инфо о событиях, новостях, изменениях в статусе проверки домашек" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="30" y="1210" width="740" height="30" as="geometry" />
         </mxCell>
         <mxCell id="jUb1sBOBOLr7_-jceM8G-57" value="Организация работы с CVS (GitHub). Gitflow (feature branch, develop branch, release branch, fix branch)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -193,6 +193,9 @@
         </mxCell>
         <mxCell id="jUb1sBOBOLr7_-jceM8G-59" value="Unit test, Integration test, e2e, QA" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="30" y="1340" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-60" value="Code style, Archetecture, Directory structure" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1380" width="310" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
