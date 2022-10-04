@@ -1,1 +1,191 @@
-<mxfile host="app.diagrams.net" modified="2022-10-04T07:28:13.570Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.3.7" etag="mbkNiz_labRKYA746qQy" type="github"><diagram id="NuDOtJG8TD-ys9CqmtJ7">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-04T08:23:30.796Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="hkO-Kvn1MbVbRVSxOwxl" version="20.3.7" type="github">
+  <diagram id="NuDOtJG8TD-ys9CqmtJ7" name="Страница 1">
+    <mxGraphModel dx="868" dy="460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-1" value="This bot should be able to cover most of hand-written messages. &lt;b&gt;Не понятно, что имелось в виду. Какова должна быть реакция на каждое рукописное сообщение?&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="30" width="790" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-2" value="It should be embedded to the whole GU community infrastructure.&lt;b&gt;Опять же. Что имелось в виду. Какая степень интеграции&amp;nbsp; и с какими сервисами&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="70" width="790" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-3" value="&lt;span style=&quot;color: rgb(220, 221, 222); font-family: Whitney, &amp;quot;Helvetica Neue&amp;quot;, Helvetica, Arial, sans-serif; font-size: 16px; text-align: left; background-color: rgb(54, 57, 63);&quot;&gt;Must be able to:&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="110" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-4" value="Identify users(collaborate with web site)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="160" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-5" value="Golang United Web Site Auth API" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="414" y="135" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-6" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="150" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-7" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jUb1sBOBOLr7_-jceM8G-6" target="jUb1sBOBOLr7_-jceM8G-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="210" as="sourcePoint" />
+            <mxPoint x="380" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-8" value="1. Login/Password&lt;br&gt;2. Token" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jUb1sBOBOLr7_-jceM8G-7">
+          <mxGeometry x="0.2067" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-9" value="Post messages in corresponding groups about wearecommunity events(grabbing is not to be done here)." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="280" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-10" value="Бот должен содержать информацию о группах Wearecomunity. Пользователи бота должны подписаться на эти группы через бот или же бот должен получать эту информацию с сайта для каждого аутентифицированного пользователя?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="330" y="270" width="440" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-11" value="Golang United Web Site Auth API" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="360" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-12" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="375" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jUb1sBOBOLr7_-jceM8G-12" target="jUb1sBOBOLr7_-jceM8G-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-14" value="Post event in GROUP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jUb1sBOBOLr7_-jceM8G-13">
+          <mxGeometry x="0.131" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-15" value="BOT" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="375" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-18" value="Check new events" style="endArrow=classic;html=1;rounded=0;entryX=0.875;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jUb1sBOBOLr7_-jceM8G-15" target="jUb1sBOBOLr7_-jceM8G-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="360" as="sourcePoint" />
+            <mxPoint x="380" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-19" value="Coresponding user chanel" style="swimlane;horizontal=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="340" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-21" value="Event" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.005;entryY=0.15;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="jUb1sBOBOLr7_-jceM8G-15" target="jUb1sBOBOLr7_-jceM8G-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="310" y="340" as="sourcePoint" />
+            <mxPoint x="410" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-22" value="Event" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="jUb1sBOBOLr7_-jceM8G-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="jUb1sBOBOLr7_-jceM8G-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="410" as="sourcePoint" />
+            <mxPoint x="569" y="374" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-24" value="Event" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="jUb1sBOBOLr7_-jceM8G-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-25" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.005;entryY=0.831;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="jUb1sBOBOLr7_-jceM8G-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="410" as="sourcePoint" />
+            <mxPoint x="570" y="425.6521739130435" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-26" value="Event" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="jUb1sBOBOLr7_-jceM8G-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-27" value="Publish fresh news about go(communicate with aggregator server here)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="555" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-28" value="news aggregator server" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="530" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-29" value="BOT" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="494" y="540" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-30" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.875;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jUb1sBOBOLr7_-jceM8G-29" target="jUb1sBOBOLr7_-jceM8G-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="480" as="sourcePoint" />
+            <mxPoint x="430" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-31" value="check news" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="jUb1sBOBOLr7_-jceM8G-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-32" value="USER BD" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="570" y="600" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-34" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=27.5;entryPerimeter=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jUb1sBOBOLr7_-jceM8G-29" target="jUb1sBOBOLr7_-jceM8G-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="480" as="sourcePoint" />
+            <mxPoint x="430" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-35" value="Get all users" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="jUb1sBOBOLr7_-jceM8G-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jUb1sBOBOLr7_-jceM8G-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="480" as="sourcePoint" />
+            <mxPoint x="730" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-37" value="Post&amp;nbsp; news to all users" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="jUb1sBOBOLr7_-jceM8G-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-38" value="Homework/events&amp;nbsp; reminders PM" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="710" width="190" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-39" value="AUTOCODE API" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="700" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-44" value="BOT" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="540" y="710" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-46" value="USER BD" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="616" y="770" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-47" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=27.5;entryPerimeter=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jUb1sBOBOLr7_-jceM8G-44" target="jUb1sBOBOLr7_-jceM8G-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="376" y="650" as="sourcePoint" />
+            <mxPoint x="476" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-48" value="Get all users" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="jUb1sBOBOLr7_-jceM8G-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-49" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.875;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="jUb1sBOBOLr7_-jceM8G-44" target="jUb1sBOBOLr7_-jceM8G-39">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="522" y="750" as="sourcePoint" />
+            <mxPoint x="428" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-50" value="check homework&amp;nbsp; status" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="jUb1sBOBOLr7_-jceM8G-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-51" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="555" y="740" as="sourcePoint" />
+            <mxPoint x="781" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-52" value="Post message to corespond users" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="jUb1sBOBOLr7_-jceM8G-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-53" value="Confirming tool (like 2FA, PIN codes)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="860" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-54" value="Применительно к какой задче этот функционал? При регистрации в боте указывается логин от Wearecommunity, на почту из профиля API получаем почтовый адрес пользователя и отправляем PIN, ожидаем в канале пользователя подтверждение?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="860" width="510" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-55" value="Комманды боту:&lt;br&gt;1.&amp;nbsp;Check status of the course and participation. &lt;b&gt;\cstatus&lt;/b&gt;. Откуда берем? Wearecommunity API? Требуется ли дополнительные уточнения? Закрытые курсы/участие, только активные, все?&lt;br&gt;&lt;br&gt;2.&amp;nbsp;Request hometask/description. &lt;b&gt;\htask&lt;/b&gt;. Откуда берем? Autocode API? Требуется ли дополнительные уточнения? По какому курсу? Фильтр по статусу задачи (открытая, закрытая). Какой объем информации?&lt;br&gt;&lt;br&gt;3.&amp;nbsp;View links to previous events(lectures). &lt;b&gt;\elink&amp;nbsp;&lt;/b&gt;Откуда берем? Wearecommunity API? Фильтруем все события релевантные курсам на которые сейчас подписан пользователь?&lt;br&gt;&lt;br&gt;4.&amp;nbsp;Check certificate from certificates. &lt;b&gt;\cert&amp;nbsp;&lt;/b&gt;Что эта проверка означает? Проверить есть ли у пользовател сертификаты и выдать ему сотв линки?" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="930" width="450" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="jUb1sBOBOLr7_-jceM8G-56" value="Какая СУБД? SQL(PostgreSQL, MySQL), NoSQL(MongoDB).&lt;br&gt;Данные: Инфо о пользователе, ид его чата, кэшируем данные? В каких группах Wearecommunity состоит, на какие курсы подписан, желает ли получать инфо о событиях, новостях, изменениях в статусе проверки домашек" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1210" width="740" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
