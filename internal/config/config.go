@@ -7,8 +7,9 @@ import (
 )
 
 type Config struct {
-	Token string      `yaml:"token" env:"BOT_TOKEN" env-description: "Telegram bot token" env-required: "true"`
-	Redis RedisConfig `yaml:"redis"`
+	Token       string      `yaml:"token" env:"BOT_TOKEN" env-description: "Telegram bot token" env-required: "true"`
+	Redis       RedisConfig `yaml:"redis"`
+	GithubToken string      `yaml:"github_token" env:"GITHUB_TOKEN" env-description: "GitHub token" env-required: "true"`
 }
 
 type RedisConfig struct {

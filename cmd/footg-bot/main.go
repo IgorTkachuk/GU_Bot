@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/NEKETSKY/footg-bot/internal/bot"
 	"github.com/NEKETSKY/footg-bot/internal/config"
+	"github.com/NEKETSKY/footg-bot/internal/handlers/bot/github"
 	"github.com/NEKETSKY/footg-bot/internal/handlers/bot/global"
 	"github.com/NEKETSKY/footg-bot/internal/handlers/bot/hello"
 	registration2 "github.com/NEKETSKY/footg-bot/internal/handlers/bot/registration"
@@ -38,6 +39,9 @@ func main() {
 
 	registrationHandler := registration2.NewHandler()
 	registrationHandler.Register(b)
+
+	githubHandler := github.NewHandler()
+	githubHandler.Register(b)
 
 	globalHandler := global.NewHandler(registrationHandler)
 	globalHandler.Register(b)
