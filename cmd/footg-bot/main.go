@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"github.com/NEKETSKY/footg-bot/internal/bot"
 	"github.com/NEKETSKY/footg-bot/internal/config"
@@ -25,6 +26,12 @@ func main() {
 		Password: config.Redis.Password,
 		DB:       config.Redis.Db,
 	})
+
+	pong, err := rdb.Ping(context.Background()).Result()
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(pong)
 
 	b, err := bot.NewFooBot(config.Token, rdb)
 	if err != nil {

@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  redis:
+    image: "redis:alpine"
+    hostname: redis
+    ports:
+      - "6379:6379"
+  bot:
+    build: .
+    image: "bot:latest"
+    container_name: bot_app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+    environment:
+      BOT_TOKEN: 5631210145:AAGGvfiDHNWZDsyVKLX8Juz86QFJY5gHUnA
+      GITHUB_TOKEN: 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
